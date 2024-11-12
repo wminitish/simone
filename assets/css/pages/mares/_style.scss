@@ -1,0 +1,46 @@
+section.mares_category {
+  background-color: var(--black_medium);
+  .stallions_heading {
+    h2 {
+      color: var(--white);
+    }
+  }
+}
+section.about_mares {
+  background-color: var(--black_medium);
+  .about_stallion_m {
+    .about_stallion_heading {
+      h2 {
+        color: var(--white);
+      }
+    }
+
+    .about_stallions_para {
+      p {
+        color: var(--white);
+      }
+    }
+    .about_stallions_btn {
+      a {
+        background-color: var(--grey);
+        color: var(--black_medium);
+      }
+    }
+  }
+}
+section.mares_listing_m {
+  background-color: var(--black_medium);
+  .stallion_listing_inner {
+    .stallion_listing_heading {
+      h2 {
+        color: var(--white);
+      }
+    }
+    .listing_load_more {
+      a {
+        background-color: var(--grey);
+        color: var(--black_medium);
+      }
+    }
+  }
+}

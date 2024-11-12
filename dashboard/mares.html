@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- font add -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome cdns -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body class="dash_body_m">
+    <div class="main_dashboard_m">
+      <div class="dashboard_wrapper_f d-flex">
+        <div class="dash_sidebar_m">
+          <div class="dash_sidebar_inner">
+            <div class="User_avtar text-center">
+              <img src="../assets/image/Ellipse 6.png" alt="User avtaar" />
+            </div>
+            <div class="menu_list">
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./index.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-tachometer-alt"></i>
+                    </span>
+                    <span class="menu_items_t"> Dashboard </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./profile.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <span class="menu_items_t"> Sejal’s profile </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20 active_menu">
+                  <a
+                    href="./mares.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="menu_items_t"> Your Mares </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./stallions.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fa-solid fa-list"></i>
+                    </span>
+                    <span class="menu_items_t"> Your Stallions </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./calender.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-calendar-check"></i>
+                    </span>
+                    <span class="menu_items_t"> Calender </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./followed-mares.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="menu_items_t"> Followed Mares </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./followed-stallions.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="menu_items_t"> Followed Stallions </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-calendar-alt"></i>
+                    </span>
+                    <span class="menu_items_t"> Your Semen Contracts </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-sign"></i>
+                    </span>
+                    <span class="menu_items_t"> Auction Take Part </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fa-solid fa-thumbtack"></i>
+                    </span>
+                    <span class="menu_items_t"> List Your Auction Items </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-sliders-h"></i>
+                    </span>
+                    <span class="menu_items_t"> Settings </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </span>
+                    <span class="menu_items_t"> Purchases </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    <span class="menu_items_t"> Bank Details </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-book"></i>
+                    </span>
+                    <span class="menu_items_t"> Documentation </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20 collaose_menu">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-play-circle"></i>
+                    </span>
+                    <span class="menu_items_t"> Collapse menu </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20 logout_item">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </span>
+                    <span class="menu_items_t"> Log out </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard_body_content">
+          <div class="dash_top_header">
+            <header class="d-flex align-items-center justify-space-between">
+              <div class="menu-bar d-none">
+                <div class="menu-bar-icon collaose_menu cursor-pointer">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+              <div class="search_bar_m">
+                <div class="darksoul-search-bar" id="searchbar">
+                  <input
+                    id="searchbarinput"
+                    class="darksoul-search-bar-input"
+                    type="text"
+                    name="search"
+                    id="searchval"
+                    placeholder="Type something"
+                  />
+                  <img
+                    id="searchicon"
+                    width="22"
+                    height="22"
+                    src="https://img.icons8.com/sf-black/100/ffffff/search.png"
+                    alt="search"
+                  />
+                  <div class="darksoul-dropdown" id="dropdown">
+                    <ul id="resultlist">
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sign_out_btn">
+                <ul role="menu" class="ab-top-secondary ab-top-menu list-none">
+                  <li id="menu-bar-my-account" class="menupop with-avatar">
+                    <a class="ab-item d-flex align-items-center gap10" href="#">
+                      <span>
+                        Howdy, <span class="display-name"> Sejal </span>
+                      </span>
+                      <span class="img-content">
+                        <img
+                          alt=""
+                          src="../assets/image/Ellipse 6.png"
+                          srcset="../assets/image/Ellipse 6.png"
+                          class="ab-avatar"
+                          height="26"
+                          width="26"
+                          decoding="async"
+                        />
+                      </span>
+                    </a>
+                    <div class="ab-sub-wrapper d-none">
+                      <ul class="ab-submenu list-none">
+                        <li
+                          role="group"
+                          id="admin-bar-user-info"
+                          class="d-flex align-items-center gap10"
+                        >
+                          <span>
+                            <a class="ab-item" role="menuitem" href="#">
+                              <img
+                                alt=""
+                                src="../assets/image/Ellipse 6.png"
+                                srcset="
+                                ../assets/image/Ellipse 6.png
+                                "
+                                class="ab-avatar"
+                                height="70"
+                                width="70"
+                                decoding="async"
+                              />
+                            </a>
+                          </span>
+                          <span>
+                            <a href="#">
+                              <span class="display-name">Sejal</span>
+                              <span class="display-name edit-profile">
+                                Edit Profile
+                              </span>
+                            </a>
+                            <a
+                              class="ab-item item_logout"
+                              role="menuitem"
+                              href="#"
+                              >Log Out</a
+                            >
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+          <div class="dash_body_inner">
+            <div class="our_stallions">
+              <div class="stallions_list_m d-flex gap20 flexwrap">
+                <article class="stallion_items stallions_add_new text-center">
+                  <a href="./add-mares.html">
+                    <div class="stallion_title mb20">
+                      <p>Add New</p>
+                    </div>
+                    <div
+                      class="add_stallion_bar d-flex align-items-center justify-content-center"
+                    >
+                      <p>+</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 90"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 50"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 30"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 50"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 85"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 90"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 10"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 2"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 20"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 1"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+                <article class="stallion_items text-center">
+                  <div class="stallion_title mb20">
+                    <p>Mares</p>
+                  </div>
+
+                  <div
+                    class="add_stallion_bar d-flex align-items-center justify-content-center background-img"
+                    style="background-image: url(../assets/image/hourse.png)"
+                  >
+                    <span class="percent_box">
+                      <svg>
+                        <circle cx="105" cy="105" r="100"></circle>
+                        <circle
+                          cx="105"
+                          cy="105"
+                          r="100"
+                          style="--percent: 100"
+                        ></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

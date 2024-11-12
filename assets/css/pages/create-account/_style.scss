@@ -1,0 +1,56 @@
+// banner start
+section#create_account_main {
+  height: 400px;
+  padding-top: 100px;
+}
+// banner end
+// create form start
+.create_ac_form {
+  background-color: var(--grey);
+  .create_ac_form_inner {
+    .form-container {
+      max-width: 650px;
+      margin: 0 auto;
+      .account_detail {
+        h3 {
+          color: var(--black-medium);
+          font-family: Montserrat, sans-serif;
+          font-size: 27px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+        .row {
+          margin: 0 0 15px;
+          gap: 20px;
+          .form-group {
+            flex: 1 calc(100% - 20px);
+            label {
+              display: block;
+              margin-bottom: 5px;
+              width: 100%;
+              color: var(--black-medium);
+              font-family: Montserrat, sans-serif;
+              font-size: 14px;
+            }
+            input {
+              display: block;
+              width: 100%;
+              outline: 0;
+              border: 0;
+              padding: 12px;
+              width: 100%;
+              font-family: Montserrat, sans-serif;
+              font-size: 14px;
+              line-height: 15px;
+              font-weight: 400;
+              color: var(--black_medium);
+              text-transform: capitalize;
+              height: 40px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

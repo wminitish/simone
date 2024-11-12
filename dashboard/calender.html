@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- font add -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome cdns -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- calender Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body class="dash_body_m">
+    <div class="main_dashboard_m">
+      <div class="dashboard_wrapper_f d-flex">
+        <div class="dash_sidebar_m">
+          <div class="dash_sidebar_inner">
+            <div class="User_avtar text-center">
+              <img src="../assets/image/Ellipse 6.png" alt="User avtaar" />
+            </div>
+            <div class="menu_list">
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20 ">
+                  <a
+                    href="./index.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-tachometer-alt"></i>
+                    </span>
+                    <span class="menu_items_t"> Dashboard </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./profile.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <span class="menu_items_t"> Sejal’s profile </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./mares.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="menu_items_t"> Your Mares </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./stallions.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fa-solid fa-list"></i>
+                    </span>
+                    <span class="menu_items_t"> Your Stallions </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20 active_menu">
+                  <a
+                    href="./calender.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-calendar-check"></i>
+                    </span>
+                    <span class="menu_items_t"> Calender </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./followed-mares.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="menu_items_t"> Followed Mares </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./followed-stallions.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="menu_items_t"> Followed Stallions </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-calendar-alt"></i>
+                    </span>
+                    <span class="menu_items_t"> Your Semen Contracts </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-sign"></i>
+                    </span>
+                    <span class="menu_items_t"> Auction Take Part </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fa-solid fa-thumbtack"></i>
+                    </span>
+                    <span class="menu_items_t"> List Your Auction Items </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-sliders-h"></i>
+                    </span>
+                    <span class="menu_items_t"> Settings </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </span>
+                    <span class="menu_items_t"> Purchases </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    <span class="menu_items_t"> Bank Details </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-book"></i>
+                    </span>
+                    <span class="menu_items_t"> Documentation </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20 collaose_menu">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-play-circle"></i>
+                    </span>
+                    <span class="menu_items_t"> Collapse menu </span>
+                  </a>
+                </li>
+                <li class="menu_list_items mb20 logout_item">
+                  <a href="#" class="d-flex align-items-center gap10">
+                    <span class="list_icon">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </span>
+                    <span class="menu_items_t"> Log out </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard_body_content">
+          <div class="dash_top_header">
+            <header class="d-flex align-items-center justify-space-between">
+              <div class="menu-bar d-none">
+                <div class="menu-bar-icon collaose_menu cursor-pointer">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+              <div class="search_bar_m">
+                <div class="darksoul-search-bar" id="searchbar">
+                  <input
+                    id="searchbarinput"
+                    class="darksoul-search-bar-input"
+                    type="text"
+                    name="search"
+                    id="searchval"
+                    placeholder="Type something"
+                  />
+                  <img
+                    id="searchicon"
+                    width="22"
+                    height="22"
+                    src="https://img.icons8.com/sf-black/100/ffffff/search.png"
+                    alt="search"
+                  />
+                  <div class="darksoul-dropdown" id="dropdown">
+                    <ul id="resultlist">
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <p>
+                            Most people only see the success and the winning
+                            moments
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sign_out_btn">
+                <ul role="menu" class="ab-top-secondary ab-top-menu list-none">
+                  <li id="menu-bar-my-account" class="menupop with-avatar">
+                    <a class="ab-item d-flex align-items-center gap10" href="#">
+                      <span>
+                        Howdy, <span class="display-name"> Sejal </span>
+                      </span>
+                      <span class="img-content">
+                        <img
+                          alt=""
+                          src="../assets/image/Ellipse 6.png"
+                          srcset="../assets/image/Ellipse 6.png"
+                          class="ab-avatar"
+                          height="26"
+                          width="26"
+                          decoding="async"
+                        />
+                      </span>
+                    </a>
+                    <div class="ab-sub-wrapper d-none">
+                      <ul class="ab-submenu list-none">
+                        <li
+                          role="group"
+                          id="admin-bar-user-info"
+                          class="d-flex align-items-center gap10"
+                        >
+                          <span>
+                            <a class="ab-item" role="menuitem" href="#">
+                              <img
+                                alt=""
+                                src="../assets/image/Ellipse 6.png"
+                                srcset="
+                                ../assets/image/Ellipse 6.png
+                                "
+                                class="ab-avatar"
+                                height="70"
+                                width="70"
+                                decoding="async"
+                              />
+                            </a>
+                          </span>
+                          <span>
+                            <a href="#">
+                              <span class="display-name">Sejal</span>
+                              <span class="display-name edit-profile">
+                                Edit Profile
+                              </span>
+                            </a>
+                            <a
+                              class="ab-item item_logout"
+                              role="menuitem"
+                              href="#"
+                              >Log Out</a
+                            >
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+          <div class="dash_body_inner dash_main_body">
+            <div class="our_stallions stallions_details events_m">
+              <div class="add_new_stallions_list">
+                <div class="stallions_tabs_main">
+                  <div class="tabs_i">
+                    <div class="tab-contents row">
+                      <div class="col-lg-12">  
+                       <div class="profile_status_m mb20">
+                          <div class="profile_title mb20 d-flex align-items-center justify-space-between">
+                            <p>All Stallions</p>
+                            <div class="searchbar">
+                                <input type="search" class="search_i" />
+                                <button class="btn btn_i black_btn">Search</button>
+                            </div>
+                          </div>
+                          <div class="table-box-mm">
+                            <table class="content-table" id="myTable">
+                              <thead>
+                                <tr>
+                                  <th>Fetured Image</th>
+                                  <th>Name</th>
+                                  <th>Author</th>
+                                  <th>Date</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody class="">
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fetured_img">
+                                            <img src="../assets/image/hourse.png" class="img-cover" alt="" />
+                                        </div>
+                                    </td>
+                                  <td>
+                                    <div class="List_name">
+                                        <a href="javascript:void(0)">Animal Name</a>
+
+                                    </div>
+                                  </td>
+                                  <td>Sejal</td>
+                                  <td>01 Dec 2023</td>
+                                  <td>
+                                    <button
+                                      class="btn btn_i black_btn form_btn"
+                                    >
+                                      View
+                                    </button>
+                                    
+                                  </td>
+                                </tr>
+                              </tbody>
+                              
+                            </table>
+                            <div class="pagination d-flex justify-content-center" id="pagination"></div>
+                          </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/locale-all.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+    var rowsPerPage = 10;
+    var $tableRows = $("#myTable tbody tr");
+    var totalPages = Math.ceil($tableRows.length / rowsPerPage);
+    var currentPage = 1;
+
+    function showPage(pageNumber) {
+        $tableRows.hide();
+        var start = (pageNumber - 1) * rowsPerPage;
+        var end = start + rowsPerPage;
+        $tableRows.slice(start, end).show();
+
+        $(".pagination button").removeClass("active-page");
+        $(".pagination button[data-page='" + pageNumber + "']").addClass("active-page");
+
+        // Update current page
+        currentPage = pageNumber;
+
+        // Enable/disable prev and next buttons
+        $("#prevBtn").toggleClass("disabled", pageNumber === 1);
+        $("#nextBtn").toggleClass("disabled", pageNumber === totalPages);
+    }
+
+    function createPagination() {
+        // Previous button
+        $("#pagination").append(
+            $("<button>")
+                .attr("id", "prevBtn")
+                .addClass("disabled")
+                .html('<i class="fas fa-angle-left"></i> Previous')
+                .click(function() {
+                    if (currentPage > 1) showPage(currentPage - 1);
+                })
+        );
+
+        // Page number buttons
+        for (var i = 1; i <= totalPages; i++) {
+            $("#pagination").append(
+                $("<button>").text(i).attr("data-page", i).click(function() {
+                    showPage($(this).data("page"));
+                })
+            );
+        }
+
+        // Next button
+        $("#pagination").append(
+            $("<button>")
+                .attr("id", "nextBtn")
+                .html('Next <i class="fas fa-angle-right"></i>')
+                .click(function() {
+                    if (currentPage < totalPages) showPage(currentPage + 1);
+                })
+        );
+    }
+
+    createPagination();
+    showPage(1);  // Display the first page by default
+});
+
+    </script>
+
+  </body>
+</html>

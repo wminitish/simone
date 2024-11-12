@@ -1,0 +1,450 @@
+// stallion info list start
+section.stallion-info_m {
+  background-color: var(--grey);
+  padding-top: 100px;
+  .progeny_list {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        color: var(--black);
+        font-family: Montserrat, sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        span.check_listing {
+          margin-bottom: -11px;
+          svg {
+            fill: var(--white);
+            background-color: var(--black_medium);
+            border-radius: 20px;
+            padding: 4px 5px;
+            margin-right: 10px;
+            width: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+// stallion info list End
+// single stallion slider start
+section.single_stallions_m {
+  .pogeny_info_inner_e {
+    .progeny_img {
+      position: relative;
+      .video_icon_pop {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .video__pop {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #000000ba;
+      width: 100%;
+      height: 100%;
+      z-index: 999999;
+
+      .clos-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        svg {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+  .view_contract_btn {
+    padding: 100px 0 0;
+    a {
+      background-color: var(--black_medium);
+      color: var(--white);
+    }
+  }
+}
+section.categorySlider_design1 {
+  padding: 0px 10px 50px;
+  div#catslider {
+    padding: 100px 0;
+    .owl-stage-outer {
+      .owl-item.active:nth-child(2) {
+        .item {
+          height: 364px;
+        }
+      }
+    }
+  }
+  #catslider .item:nth-child(2),
+  #catslider .item:nth-child(3) {
+    height: 400px;
+  }
+}
+section.categorySlider_design_txt_hover {
+  div#catslider_gallery {
+    .item {
+      &:hover {
+        .catimg {
+          .cattitle {
+            p {
+              bottom: 0px;
+            }
+          }
+        }
+      }
+      .catimg {
+        .cattitle {
+          p {
+            bottom: -50px;
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+// single stallion slider end
+// tab info start
+.main_tab_m {
+  background-color: var(--grey);
+  .tab_heading_i {
+    background-color: var(--black_medium);
+    border-radius: 15px;
+    padding: 15px 0;
+    h3 {
+      color: var(--grey);
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+  .tabs_list_m {
+    .nav_tabs {
+      gap: 10px;
+      .nav_tab {
+        flex: 1 33%;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--grey);
+        margin-bottom: 20px;
+        background-color: var(--black_medium);
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      .nav_tab.active {
+        background-color: var(--d-grey);
+      }
+    }
+    #progenysalesperformance {
+      .main_stallion_list {
+        .stallion_img {
+          img {
+          }
+        }
+        .stallion_list_info {
+          .stallion_list_heading {
+            h3 {
+              color: var(--black_medium);
+              font-family: "Playfair Display", serif;
+              font-size: 30px;
+              line-height: 35px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+          .stallion_list_para {
+            p {
+              font-family: Montserrat, sans-serif;
+              font-size: 18px;
+              line-height: 28px;
+              font-weight: 300;
+              color: var(--black_medium);
+              margin-bottom: 20px;
+            }
+          }
+          .progeny_list {
+            ul {
+              li {
+                display: flex;
+                align-items: center;
+                color: var(--black_medium);
+                font-family: Montserrat, sans-serif;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 200;
+                margin-bottom: 10px;
+                span.check_listing {
+                  margin-bottom: -6px;
+                  svg {
+                    fill: var(--white);
+                    background-color: var(--black_medium);
+                    width: 21px;
+                    border-radius: 20px;
+                    padding: 4px 5px;
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .stallion_btn {
+          a {
+            background-color: var(--black_medium);
+            color: var(--grey);
+          }
+        }
+      }
+    }
+    #pedigreechart {
+      .pedigree_chart_m {
+        .chart_tree {
+          ul {
+            li {
+              position: relative;
+              z-index: 99;
+              a {
+                font-family: "Montserrat", sans-serif;
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 600;
+                color: var(--grey);
+                margin-bottom: 20px;
+                background-color: var(--black_medium);
+                padding: 12px 20px;
+                border-radius: 15px;
+                display: block;
+                position: relative;
+                z-index: 99;
+              }
+              .first_bix {
+                position: absolute;
+                width: 200px;
+                height: 420px;
+                border: 1px solid #848484;
+                border-right: 0;
+                border-radius: 15px;
+                top: 50%;
+                left: 0;
+                transform: translate(140px, -52%);
+                z-index: 9;
+              }
+              ul {
+                position: relative;
+                left: 20px;
+                li {
+                  a.blue-node {
+                    background-color: #e5efff;
+                    color: var(--black_medium);
+                  }
+                  a.pink-node {
+                    background-color: #fbeaea;
+                    color: var(--black_medium);
+                  }
+
+                  .first_bix {
+                    width: 200px;
+                    height: 211px;
+                    transform: translate(140px, -54%);
+                  }
+
+                  ul {
+                    li {
+                      .first_bix {
+                        width: 150px;
+                        height: 108px;
+                        transform: translate(140px, -58%);
+                      }
+                      a {
+                      }
+                      ul {
+                        li {
+                          padding: 20px 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #exclusivedata {
+      .gallery_masory_m {
+        .grid-wrapper_i {
+          display: grid;
+          grid-gap: 20px;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-auto-rows: 200px;
+          grid-auto-flow: dense;
+          img {
+            border-radius: 20px;
+          }
+          .wide {
+            grid-column: span 2;
+          }
+          .tall {
+            grid-row: span 2;
+          }
+          .big {
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+        }
+        .gallery_load_more {
+          padding: 50px 0;
+          a {
+            background-color: var(--black_medium);
+            color: var(--grey);
+          }
+        }
+      }
+    }
+  }
+  .tab_content {
+    display: none;
+    padding: 50px 0;
+  }
+  .tab_content.active {
+    display: block !important;
+  }
+  .view_contract_btn {
+    a {
+      background-color: var(--black_medium);
+      color: var(--grey);
+    }
+  }
+}
+// end
+// with us start
+section.with_us_main {
+  .with_us_inner {
+    .video_icon_m {
+      .video_icon_i {
+        width: 110px;
+        height: 110px;
+      }
+      .video__pop {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000ba;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        .clos-btn {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          width: 30px;
+          height: 30px;
+          svg {
+            fill: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+// end
+// semen contract form start
+section.semen_contract_f {
+  background-color: var(--grey);
+  .semen_contract_i {
+    background-color: var(--dark-grey);
+    padding: 50px;
+    border-radius: 30px;
+    .semen_contract_head {
+      h3 {
+        color: var(--grey);
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .form-container {
+      form {
+        .checkbox-group {
+          label {
+            display: block;
+            color: var(--grey);
+            font-family: "Montserrat", sans-serif;
+            font-size: 17px;
+            line-height: 28px;
+            font-weight: 400;
+          }
+          .filed_label {
+            font-size: 22px;
+          }
+        }
+        .owner_detail,
+        .mare_details_m,
+        .breeding_center {
+          margin-bottom: 30px;
+          h3 {
+            color: var(--grey);
+            font-family: "Montserrat", sans-serif;
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 400;
+          }
+          .row {
+            margin: 0 0 20px;
+            gap: 20px;
+
+            .form-group {
+              flex: 1 calc(33% - 20px);
+              label {
+                display: block;
+                margin-bottom: 5px;
+                width: 100%;
+                color: var(--grey);
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+              }
+              input,
+              select {
+                display: block;
+                width: 100%;
+                outline: 0;
+                border: 0;
+                padding: 12px;
+                width: 100%;
+                font-family: Montserrat, sans-serif;
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: 400;
+                color: var(--black_medium);
+                text-transform: capitalize;
+                height: 40px;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+        button {
+          outline: 0;
+          border: unset;
+        }
+      }
+    }
+  }
+}

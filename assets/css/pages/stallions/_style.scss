@@ -1,0 +1,140 @@
+// Banner start
+section.stallions-banner {
+  height: 700px;
+  padding-top: 50px;
+  .banner_heading-m {
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 45px;
+      line-height: 55px;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+  }
+  .para_banner {
+    p {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+  }
+}
+// Banner End
+// category slider start
+section.stallion-category {
+  background-color: var(--grey);
+  .stallions_heading {
+    margin-bottom: 50px;
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      color: var(--dark-grey);
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Category end
+// about stallion start
+.about_stallions {
+  background-color: var(--grey);
+  .about_stallion_m {
+    .about_stallion_heading {
+      margin-bottom: 50px;
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+      }
+    }
+    .about_stallions_para {
+      margin-bottom: 30px;
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: var(--black_medium);
+        margin-bottom: 20px;
+      }
+    }
+    .about_stallions_btn {
+      a {
+        background-color: var(--black_medium);
+        color: var(--white);
+      }
+    }
+  }
+}
+// about stallion end
+// stallion listing start
+.stallion_listing_m {
+  background-color: var(--grey);
+  .stallion_listing_inner {
+    .stallion_listing_heading {
+      margin-bottom: 50px;
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        color: var(--dark-grey);
+        text-transform: uppercase;
+      }
+    }
+    .listing_stallion_m {
+      article.list_stallion_a {
+        flex: 0 calc(25% - 20px);
+        height: 330px;
+        padding: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        a {
+          .listing_title {
+            p {
+              font-family: "Montserrat", sans-serif;
+              font-size: 18px;
+              line-height: 28px;
+              font-weight: 500;
+              color: var(--white);
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+    .listing_load_more {
+      a {
+        background-color: var(--black_medium);
+        color: var(--white);
+      }
+    }
+  }
+}
+// Stallion Listing End
+// With us Start
+section.with_us_main {
+  .with_us_inner {
+    .with_us_heading {
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 70px;
+        line-height: 80px;
+        font-weight: 700;
+        color: var(--white);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
