@@ -111,7 +111,10 @@
               </ul>
               <ul class="menu_list_ul">
                 <li class="menu_list_items mb20">
-                  <a href="#" class="d-flex align-items-center gap10">
+                  <a
+                    href="./semen-contracts.html"
+                    class="d-flex align-items-center gap10"
+                  >
                     <span class="list_icon">
                       <i class="fas fa-calendar-alt"></i>
                     </span>
@@ -136,6 +139,17 @@
                 </li>
               </ul>
               <ul class="menu_list_ul">
+                <li class="menu_list_items mb20">
+                  <a
+                    href="./photographer.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-sliders-h"></i>
+                    </span>
+                    <span class="menu_items_t"> Photographers </span>
+                  </a>
+                </li>
                 <li class="menu_list_items mb20">
                   <a href="#" class="d-flex align-items-center gap10">
                     <span class="list_icon">
@@ -1613,37 +1627,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        var $sidebar = $(".dash_sidebar_m");
-        var $lastItem = $(".dash_sidebar_m");
-        var sidebarOffsetTop = $sidebar.offset().top;
-        var lastItemOffset = $lastItem.outerHeight();
-
-        $(window).on("scroll", function () {
-          var scrollTop = $(window).scrollTop();
-          var sidebarBottom = sidebarOffsetTop + $sidebar.outerHeight();
-          var viewportBottom = scrollTop + $(window).height();
-
-          if (viewportBottom >= sidebarBottom) {
-            // Make last item fixed at the bottom of the viewport
-            $lastItem.css({
-              position: "fixed",
-              bottom: "0",
-              left: $sidebar.offset().left,
-              width: $sidebar.width(),
-            });
-          } else {
-            // Make last item absolute at the bottom of the sidebar
-            $lastItem.css({
-              position: "absolute",
-              bottom: "0",
-              left: "0",
-              width: "100%",
-            });
-          }
-        });
-      });
-    </script>
   </body>
 </html>

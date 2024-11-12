@@ -53,7 +53,7 @@
                 </li>
               </ul>
               <ul class="menu_list_ul">
-                <li class="menu_list_items mb20 active_menu">
+                <li class="menu_list_items mb20">
                   <a
                     href="./mares.html"
                     class="d-flex align-items-center gap10"
@@ -111,7 +111,10 @@
               </ul>
               <ul class="menu_list_ul">
                 <li class="menu_list_items mb20">
-                  <a href="#" class="d-flex align-items-center gap10">
+                  <a
+                    href="./semen-contracts.html"
+                    class="d-flex align-items-center gap10"
+                  >
                     <span class="list_icon">
                       <i class="fas fa-calendar-alt"></i>
                     </span>
@@ -136,6 +139,17 @@
                 </li>
               </ul>
               <ul class="menu_list_ul">
+                <li class="menu_list_items mb20 active_menu">
+                  <a
+                    href="./photographer.html"
+                    class="d-flex align-items-center gap10"
+                  >
+                    <span class="list_icon">
+                      <i class="fas fa-sliders-h"></i>
+                    </span>
+                    <span class="menu_items_t"> Photographers </span>
+                  </a>
+                </li>
                 <li class="menu_list_items mb20">
                   <a href="#" class="d-flex align-items-center gap10">
                     <span class="list_icon">
@@ -382,7 +396,7 @@
                               class="stallions_list_m d-flex gap20 flexwrap mb50"
                             >
                               <article
-                                class="stallion_items stallions_add_new text-center"
+                                class="stallion_items stallions_add_new text-center d-flex align-items-center justify-content-center flexcolumn gap20"
                               >
                                 <div class="stallion_title mb20">
                                   <p>Add New Images</p>
@@ -398,9 +412,12 @@
                                   class="label_edit_m d-flex justify-content-end"
                                 >
                                   <div class="edit-button">
-                                    <button class="btn">
+                                    <a
+                                      href="./edit-photographer.html"
+                                      class="btn"
+                                    >
                                       <i class="fa-solid fa-pencil"></i>
-                                    </button>
+                                    </a>
                                   </div>
                                 </div>
                                 <div
@@ -446,9 +463,12 @@
                                   class="label_edit_m d-flex justify-content-end"
                                 >
                                   <div class="edit-button">
-                                    <button class="btn">
+                                    <a
+                                      href="./edit-photographer.html"
+                                      class="btn"
+                                    >
                                       <i class="fa-solid fa-pencil"></i>
-                                    </button>
+                                    </a>
                                   </div>
                                 </div>
                                 <div
@@ -495,7 +515,7 @@
                         <div class="main_stallions_d add_new_progeny d-none">
                           <div class="">
                             <div class="title_bar mb20">
-                              <p class="text-center">Progeny Details</p>
+                              <p class="text-center">Add Images And Details</p>
                               <p
                                 class="back_to_btn add_progeny_data cursor-pointer"
                               >
@@ -506,115 +526,52 @@
                               <form action="#">
                                 <div class="form_main">
                                   <div class="form-group">
-                                    <div
-                                      class="checkbox-group d-flex align-items-center gap20 flexwrap"
-                                    >
-                                      <div
-                                        class="checkbox-group_i mb20 d-flex align-items-center gap10"
-                                      >
-                                        <label
-                                          class="d-flex align-items-center justify-space-between"
-                                        >
-                                          <span>For Sale</span>
-                                          <input
-                                            type="checkbox"
-                                            id="for-sale"
-                                          />
-                                        </label>
-                                      </div>
-                                      <div
-                                        class="checkbox-group_i mb20 d-flex align-items-center gap10"
-                                      >
-                                        <label
-                                          class="d-flex align-items-center justify-space-between"
-                                        >
-                                          <span>Marked as sold</span>
-                                          <input
-                                            type="checkbox"
-                                            id="for-sold"
-                                          />
-                                        </label>
-                                      </div>
-                                      <div
-                                        class="checkbox-group_i mb20 d-flex align-items-center gap10"
-                                      >
-                                        <label
-                                          class="d-flex align-items-center justify-space-between"
-                                        >
-                                          <span
-                                            >Is this Exceptional Progeny?</span
-                                          >
-                                          <input
-                                            type="checkbox"
-                                            id="Exceptional"
-                                          />
-                                        </label>
-                                      </div>
-                                      <div
-                                        class="checkbox-group_i mb20 d-flex align-items-center gap10"
-                                      >
-                                        <label
-                                          class="d-flex align-items-center justify-space-between"
-                                        >
-                                          <span>Display Picture</span>
-                                          <input
-                                            type="checkbox"
-                                            id="display-picture"
-                                          />
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="name"> Name </label>
-                                    <input type="text" id="name" name="name" />
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="date-of-birth">
-                                      Date of Birth
+                                    <label for="name">
+                                      Photographer Name
                                     </label>
                                     <input
                                       type="text"
-                                      id="date-of-birth"
-                                      name="date-of-birth"
+                                      id="name"
+                                      name="photographer-name"
                                     />
                                   </div>
+
                                   <div class="form-group">
-                                    <label for="gender"> Gender </label>
+                                    <label for="gender"> Location </label>
                                     <input
                                       type="text"
                                       id="gender"
-                                      name="gender"
+                                      name="Location"
                                     />
                                   </div>
                                   <div class="form-group">
-                                    <label for="color"> Color </label>
+                                    <label for="color"> Travel Radius </label>
                                     <input
-                                      type="text"
+                                      type="number"
                                       id="color"
                                       name="color"
                                     />
                                   </div>
                                   <div class="form-group">
                                     <label for="registeration-number">
-                                      Registration number
+                                      Individual Price
                                     </label>
                                     <input
                                       type="text"
-                                      id="registeration-number"
-                                      name="registeration-number"
+                                      id="Individual-Price"
+                                      name="Individual-Price"
                                     />
                                   </div>
                                   <div class="form-group">
-                                    <label for="breeder"> Breeder </label>
+                                    <label for="breeder"> Multi Price </label>
                                     <input
-                                      type="text"
-                                      id="breeder"
-                                      name="breeder"
+                                      type="number"
+                                      id="Multi-Price"
+                                      name="Multi-Price"
                                     />
                                   </div>
                                   <div class="form-group">
-                                    <label for="trainer"> Trainer </label>
+                                    <label for="trainer"> Website Links </label>
                                     <input
                                       type="text"
                                       id="trainer"
@@ -622,18 +579,28 @@
                                     />
                                   </div>
                                   <div class="form-group">
-                                    <label for="Performance">
-                                      Performance History
-                                    </label>
-                                    <textarea
-                                      id="w3review"
-                                      name="w3review"
-                                      rows="4"
-                                      cols="10"
-                                      placeholder="Enter Your Message"
-                                      data-dashlane-rid="da36f0f4e5e99bfe"
-                                      data-dashlane-classification="other"
-                                    ></textarea>
+                                    <div class="multi-upload cursor-pointer">
+                                      <label for="files"
+                                        >Select multiple files:
+                                      </label>
+                                      <input
+                                        id="files"
+                                        type="file"
+                                        name="images[]"
+                                        onchange="readURL(this);"
+                                        accept="image/*"
+                                        multiple="true"
+                                        class="cursor-pointer"
+                                      />
+                                      <button
+                                        type="button"
+                                        id="clear"
+                                        class="cursor-pointer"
+                                      >
+                                        Clear
+                                      </button>
+                                      <output id="result"> </output>
+                                    </div>
                                   </div>
                                 </div>
                               </form>
@@ -641,12 +608,6 @@
                             <div
                               class="update_btn d-flex justify-space-between mb50 gap10"
                             >
-                              <button
-                                class="btn btn_i black_btn Back_btn"
-                                onclick="activateTab()"
-                              >
-                                Back
-                              </button>
                               <button class="btn btn_i black_btn">
                                 Update
                               </button>

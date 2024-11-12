@@ -1169,9 +1169,16 @@ body.dash_body_m {
     }
   }
 }
-
-.add_photographers {
-  .stallion_title {
-    margin-bottom: 0;
+.dash_body_inner {
+  .our_stallions.add_photographers {
+    article.stallion_items {
+      .stallion_title {
+        margin-bottom: 0;
+        p {
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
   }
 }
