@@ -1151,3 +1151,27 @@ body.dash_body_m {
   }
 }
 // end
+// photographer page
+.stallions_title {
+  width: 100%;
+  .searchbar {
+    input {
+      outline: 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 13px;
+      font-family: var(--font-poppins);
+      padding: 4px 10px;
+    }
+    button {
+      font-size: 13px;
+      padding: 5px 15px;
+    }
+  }
+}
+
+.add_photographers {
+  .stallion_title {
+    margin-bottom: 0;
+  }
+}
