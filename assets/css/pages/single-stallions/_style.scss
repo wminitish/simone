@@ -217,18 +217,35 @@ section.categorySlider_design_txt_hover {
               position: relative;
               z-index: 99;
               a {
+                border-radius: 15px;
+                padding: 12px 20px;
+              }
+              .pedigreeForm,
+              a {
                 font-family: "Montserrat", sans-serif;
-                font-size: 15px;
-                line-height: 20px;
-                font-weight: 600;
-                color: var(--grey);
                 margin-bottom: 20px;
                 background-color: var(--black_medium);
-                padding: 12px 20px;
                 border-radius: 15px;
                 display: block;
                 position: relative;
                 z-index: 99;
+                color: var(--white);
+                input,
+                a {
+                  border-radius: 15px;
+                  padding: 12px 20px;
+                  width: 100%;
+                  background: transparent;
+                  border: none;
+                  font-size: 15px;
+                  line-height: 20px;
+                  font-weight: 600;
+                  color: var(--grey);
+                  outline: none;
+                }
+                input::placeholder {
+                  color: var(--grey);
+                }
               }
               .first_bix {
                 position: absolute;
@@ -246,13 +263,27 @@ section.categorySlider_design_txt_hover {
                 position: relative;
                 left: 20px;
                 li {
+                  .blue-node,
                   a.blue-node {
                     background-color: #e5efff;
                     color: var(--black_medium);
+                    input {
+                      color: var(--black);
+                    }
+                    input::placeholder {
+                      color: var(--black);
+                    }
                   }
+                  .pink-node,
                   a.pink-node {
                     background-color: #fbeaea;
                     color: var(--black_medium);
+                    input {
+                      color: var(--black);
+                    }
+                    input::placeholder {
+                      color: var(--black);
+                    }
                   }
 
                   .first_bix {

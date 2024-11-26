@@ -93,6 +93,8 @@ section.stallion-category {
     }
     .listing_stallion_m {
       article.list_stallion_a {
+        overflow: hidden;
+        position: relative;
         flex: 0 calc(25% - 20px);
         height: 330px;
         padding: 20px;
@@ -100,6 +102,21 @@ section.stallion-category {
         background-size: cover;
         border-radius: 20px;
         margin-bottom: 10px;
+        .maque_badges {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          background-color: var(--light-brown);
+          border-radius: 20px 20px 0 0;
+          padding-top: 5px;
+          marquee {
+            color: var(--white);
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+          }
+        }
         a {
           .listing_title {
             p {
@@ -122,6 +139,20 @@ section.stallion-category {
     }
   }
 }
+// star fetured
+.featured_star {
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--white);
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+}
+.featured_star.filled {
+  color: var(--white);
+}
+// end
 // Stallion Listing End
 // With us Start
 section.with_us_main {

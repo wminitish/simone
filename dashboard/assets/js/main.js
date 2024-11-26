@@ -150,27 +150,27 @@ $(document).ready(function () {
 });
 
 // for pedigree edit text
-$(document).ready(function () {
-  $(".black-node, .blue-node, .pink-node").on("click", function (e) {
-    e.preventDefault();
+// $(document).ready(function () {
+//   $(".black-node, .blue-node, .pink-node").on("click", function (e) {
+//     e.preventDefault();
 
-    $(this).attr("contenteditable", "true").text("").focus();
-  });
+//     $(this).attr("contenteditable", "true").text("").focus();
+//   });
 
-  $(".black-node, .blue-node, .pink-node").on(
-    "blur keypress",
-    function (event) {
-      if (
-        event.type === "blur" ||
-        (event.type === "keypress" && event.which === 13)
-      ) {
-        $(this).removeAttr("contenteditable");
+//   $(".black-node, .blue-node, .pink-node").on(
+//     "blur keypress",
+//     function (event) {
+//       if (
+//         event.type === "blur" ||
+//         (event.type === "keypress" && event.which === 13)
+//       ) {
+//         $(this).removeAttr("contenteditable");
 
-        if (event.which === 13) event.preventDefault();
-      }
-    }
-  );
-});
+//         if (event.which === 13) event.preventDefault();
+//       }
+//     }
+//   );
+// });
 // upload images
 window.onload = function () {
   if (window.File && window.FileList && window.FileReader) {
@@ -223,4 +223,14 @@ $(document).on("click", "#clear", function () {
   $("#result").hide();
   $("#files").val("");
   $(this).hide();
+});
+
+// pedigree input
+document.querySelectorAll(".pedigreeForm").forEach((form) => {
+  form.addEventListener("click", function () {
+    const inputs = this.querySelectorAll(".input");
+    inputs.forEach((input) => {
+      input.style.display = "block";
+    });
+  });
 });

@@ -152,3 +152,24 @@ $(document).ready(function () {
     hidePopup();
   });
 });
+// for featured
+document.addEventListener("DOMContentLoaded", function () {
+  const stars = document.querySelectorAll(".featured_star");
+  stars.forEach(function (star) {
+    star.addEventListener("click", function () {
+      const isFilled = star.getAttribute("data-filled") === "true";
+
+      if (isFilled) {
+        star.classList.remove("filled");
+        star.setAttribute("data-filled", "false");
+        star.innerHTML = "&#9734;";
+      } else {
+        star.classList.add("filled");
+        star.setAttribute("data-filled", "true");
+        star.innerHTML = "&#9733;";
+      }
+    });
+  });
+});
+
+// end
