@@ -1,34 +1,37 @@
-// stallion info list start
+// Sire dam info list start
 section.stallion-info_m {
   background-color: var(--grey);
   padding-top: 100px;
-  .progeny_list {
-    ul {
-      li {
-        display: flex;
-        align-items: center;
-        color: var(--black);
-        font-family: Montserrat, sans-serif;
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 400;
-        margin-bottom: 10px;
-        span.check_listing {
-          margin-bottom: -11px;
-          svg {
-            fill: var(--white);
-            background-color: var(--black_medium);
-            border-radius: 20px;
-            padding: 4px 5px;
-            margin-right: 10px;
-            width: 21px;
-          }
-        }
-      }
+  .sire_head {
+    margin-bottom: 50px;
+    h4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 35px;
+      line-height: 38px;
+      font-weight: bold;
+      color: var(--black_medium);
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 400;
+      color: var(--black_medium);
+      margin-bottom: 20px;
+    }
+  }
+  .sire_details {
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 600;
+      color: var(--black_medium);
     }
   }
 }
-// stallion info list End
+// sire dam End
 // single stallion slider start
 section.single_stallions_m {
   .pogeny_info_inner_e {
@@ -154,6 +157,7 @@ section.categorySlider_design_txt_hover {
           img {
           }
         }
+
         .stallion_list_info {
           .stallion_list_heading {
             h3 {
@@ -360,6 +364,151 @@ section.categorySlider_design_txt_hover {
       color: var(--grey);
     }
   }
+  .stallion_img {
+    position: relative;
+    .stallion_label_inner {
+      background-color: #2caf2c;
+      padding: 4px 3px;
+      color: var(--white);
+      margin-left: -20px;
+      border-radius: 2px 3px 3px 2px;
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      &:before {
+        content: "";
+        top: 0;
+        right: -13px;
+        position: absolute;
+        z-index: 9;
+        border-top: 14px solid transparent;
+        border-left: 14px solid #2caf2c;
+        border-bottom: 14px solid transparent;
+        border-radius: 1px;
+      }
+      label {
+        padding: 0 4px 1px;
+        border-radius: 3px;
+        font-family: var(--font-poppins);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: var(--white);
+        text-transform: uppercase;
+      }
+    }
+  }
+  .main_stallions_listings {
+    article.stallion-box {
+      cursor: pointer;
+      flex: 0 calc(25% - 20px);
+      width: 100%;
+      height: 370px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      position: relative;
+      padding: 20px;
+      .stallion-items {
+        position: relative;
+        z-index: 9999;
+        overflow: hidden;
+        height: 100%;
+        .catimg {
+          .cattitle {
+            position: relative;
+            z-index: 9999;
+            text-align: center;
+            bottom: -300px;
+            transition: bottom 0.5s ease;
+            h4 {
+              font-family: Montserrat, sans-serif;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 400;
+              color: var(--white);
+              margin-bottom: 30px;
+            }
+            .stallion_info {
+              ul {
+                li {
+                  font-family: Montserrat, sans-serif;
+                  font-size: 17px;
+                  line-height: 20px;
+                  font-weight: 400;
+                  color: var(--white);
+                  margin-bottom: 7px;
+                }
+              }
+              .interest_btn {
+                a {
+                  font-size: 14px;
+                  line-height: 18px;
+                  padding: 7px 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .stallion_label_inner {
+        background-color: #2caf2c;
+        padding: 4px 3px;
+        color: var(--white);
+        margin-left: -20px;
+        border-radius: 2px 3px 3px 2px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        z-index: 9999;
+        &:before {
+          content: "";
+          top: 0;
+          right: -13px;
+          position: absolute;
+          z-index: 9;
+          border-top: 14px solid transparent;
+          border-left: 14px solid #2caf2c;
+          border-bottom: 14px solid transparent;
+          border-radius: 1px;
+        }
+        label {
+          padding: 0 4px 1px;
+          border-radius: 3px;
+          font-family: var(--font-poppins);
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          color: var(--white);
+          text-transform: uppercase;
+        }
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        background: linear-gradient(
+          182.7deg,
+          #00000091 74.47%,
+          #000000cf 97.44%
+        );
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        z-index: 9;
+        border-radius: 20px;
+      }
+      &:hover {
+        .stallion-items {
+          .catimg {
+            .cattitle {
+              bottom: -70px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // end
 // with us start
@@ -478,4 +627,8 @@ section.semen_contract_f {
       }
     }
   }
+}
+div#catslider .owl-stage .owl-item.active:nth-child(2),
+div#catslider .owl-stage .owl-item.active:nth-child(3) {
+  scale: 5.5 !important;
 }

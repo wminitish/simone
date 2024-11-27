@@ -234,3 +234,65 @@ document.querySelectorAll(".pedigreeForm").forEach((form) => {
     });
   });
 });
+// for payment card
+$(document).ready(function () {
+  $(".input-cart-number").on("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, "");
+
+    $t = $(this);
+
+    if ($t.val().length > 3) {
+      $t.next().focus();
+    }
+
+    var card_number = "";
+    $(".input-cart-number").each(function () {
+      card_number += $(this).val() + " ";
+      if ($(this).val().length == 4) {
+        $(this).next().focus();
+      }
+    });
+
+    $(".credit-card-box .number").html(card_number);
+  });
+
+  $(".card-holders").on("input", function () {
+    this.value = this.value.replace(/[^a-zA-Z\s]/g, "");
+    $(".credit-card-box .card-holder div").html($(this).val());
+  });
+
+  $(".card-expiration-month, .card-expiration-year").change(function () {
+    let m = $(".card-expiration-month").val();
+    m = m.length === 1 ? "0" + m : m;
+    let y = $(".card-expiration-year").val().substr(2, 2);
+    $(".card-expiration-date div").html(m + "/" + y);
+  });
+
+  $(".card-ccv")
+    .on("focus", function () {
+      $(".credit-card-box").addClass("hover");
+    })
+    .on("blur", function () {
+      $(".credit-card-box").removeClass("hover");
+    })
+    .on("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      $(".ccv div").html($(this).val());
+    });
+
+  setTimeout(function () {
+    $(".card-ccv")
+      .focus()
+      .delay(1000)
+      .queue(function () {
+        $(this).blur().dequeue();
+      });
+  }, 500);
+});
+// on click open popup
+$(document).ready(function () {
+  $(".main-checkout form button").on("click", function (e) {
+    e.preventDefault();
+    $(".main-checkout .for-popup").css("display", "flex");
+  });
+});
