@@ -326,7 +326,7 @@
       <div class="container-fluid no-padding hidden">
         <div class="row">
           <div class="col-lg-12">
-            <div class="pogeny_info_inner_e d-flex">
+            <div class="pogeny_info_inner_e d-flex direction_mobile">
               <div class="progeny_img">
                 <img
                   src="./assets/image/hourse.png"
@@ -470,7 +470,7 @@
     </section>
     <!-- Mares section end -->
     <!--tab section start  -->
-    <section class="main_tab_m pdb100">
+    <section class="main_tab_m pdb100 relative">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -568,7 +568,7 @@
                       <a
                         href="javascript:void(0)"
                         aria-label="View Progeny"
-                        class="btn_i"
+                        class="btn_i Interested_popup"
                       >
                         Interested In Purchasing
                       </a>
@@ -747,7 +747,10 @@
                               </ul>
                             </div>
                             <div class="interest_btn">
-                              <a href="javascript:void(0);" class="btn_i btn">
+                              <a
+                                href="javascript:void(0);"
+                                class="btn_i btn Interested_popup"
+                              >
                                 Interested In Purchasing
                               </a>
                             </div>
@@ -918,128 +921,60 @@
                 </div>
               </div>
               <div id="exclusivedata" class="tab_content">
-                <div class="gallery_masory_m">
+                <div class="gallery_masory_m d-flex">
                   <div class="grid-wrapper_i">
                     <div class="gallery_img">
+                      <video
+                        src="./assets/image/istockphoto-1169641178-640_adpp_is.mp4"
+                        class="video-cover img-cover"
+                        onclick="openPreview(this)"
+                      ></video>
+                    </div>
+
+                    <!-- Image Items -->
+                    <div class="gallery_img">
                       <img
-                        src="./assets/image/Rectangle 70.png"
-                        alt=""
+                        src="./assets/image/Rectangle 36.png"
+                        alt="Image 1"
                         class="img-cover"
+                        onclick="openPreview(this)"
                       />
                     </div>
                     <div class="gallery_img">
                       <img
-                        src="./assets/image/Rectangle 74.png"
-                        alt=""
+                        src="./assets/image/Rectangle 35.png"
+                        alt="Image 2"
                         class="img-cover"
-                      />
-                    </div>
-                    <div class="tall">
-                      <img
-                        src="./assets/image/Rectangle 71.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="wide">
-                      <img
-                        src="./assets/image/Rectangle 73.png"
-                        alt=""
-                        class="img-cover"
+                        onclick="openPreview(this)"
                       />
                     </div>
                     <div class="gallery_img">
                       <img
-                        src="./assets/image/Rectangle 75.png"
-                        alt=""
+                        src="./assets/image/Rectangle 33.png"
+                        alt="Image 3"
                         class="img-cover"
-                      />
-                    </div>
-                    <div class="tall">
-                      <img
-                        src="./assets/image/Rectangle 82.png"
-                        alt=""
-                        class="img-cover"
+                        onclick="openPreview(this)"
                       />
                     </div>
                     <div class="gallery_img">
                       <img
-                        src="./assets/image/Rectangle 82.png"
-                        alt=""
+                        src="./assets/image/Rectangle 21.png"
+                        alt="Image 4"
                         class="img-cover"
-                      />
-                    </div>
-                    <div class="wide">
-                      <img
-                        src="./assets/image/Rectangle 79.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="gallery_img">
-                      <img
-                        src="./assets/image/Rectangle 70.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="gallery_img">
-                      <img
-                        src="./assets/image/Rectangle 74.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="tall">
-                      <img
-                        src="./assets/image/Rectangle 71.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="wide">
-                      <img
-                        src="./assets/image/Rectangle 73.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="gallery_img">
-                      <img
-                        src="./assets/image/Rectangle 75.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="tall">
-                      <img
-                        src="./assets/image/Rectangle 82.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="gallery_img">
-                      <img
-                        src="./assets/image/Rectangle 82.png"
-                        alt=""
-                        class="img-cover"
-                      />
-                    </div>
-                    <div class="wide">
-                      <img
-                        src="./assets/image/Rectangle 79.png"
-                        alt=""
-                        class="img-cover"
+                        onclick="openPreview(this)"
                       />
                     </div>
                   </div>
-                  <div class="gallery_load_more text-center">
-                    <a
-                      href="javascript:void(0)"
-                      class="btn_i load_btn"
-                      aria-label="load more gallery"
-                      >Load More</a
-                    >
+
+                  <!-- Preview Section -->
+                  <div class="previewContainer">
+                    <div id="previewContent">
+                      <img
+                        src="./assets/image/Rectangle 21.png"
+                        alt="Default Preview"
+                        class="img-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1056,11 +991,107 @@
           </div>
         </div>
       </div>
+      <!-- call to owner popup -->
+      <div class="call_owner_pop d-none">
+        <div class="intersted_purchase">
+          <div class="pop_box">
+            <div class="close-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </div>
+            <div class="pop-title">
+              <h4 class="text-center">
+                <span class="icon-phone">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                    />
+                  </svg>
+                </span>
+                <span class="text_underline"
+                  ><a href="javascript:void(0);">Call the Owner</a>
+                </span>
+                <br />
+                or <br />
+                Fill Out the Form to Purchase <br />
+                the Progeny Name
+              </h4>
+              <form action="#">
+                <div class="main_groups d-flex gap20">
+                  <div class="group_fields">
+                    <label for="fname"
+                      ><span class="visually-hidden">First name:</span></label
+                    >
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="group_fields">
+                    <label for="Yphone"
+                      ><span class="visually-hidden">Your Phone</span></label
+                    >
+                    <input
+                      type="phone"
+                      id="phone"
+                      name="phone"
+                      placeholder="Your Phone"
+                    />
+                  </div>
+                </div>
+                <div class="main_groups">
+                  <div class="group_fields">
+                    <label for="Youremail"
+                      ><span class="visually-hidden">Your Email</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                </div>
+
+                <div class="main_groups">
+                  <div class="group_fields">
+                    <label for="textarea"
+                      ><span class="visually-hidden"
+                        >Enter Your Message</span
+                      ></label
+                    >
+                    <textarea
+                      id="w3review"
+                      name="w3review"
+                      rows="4"
+                      cols="48"
+                      placeholder="Enter Your Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="main_groups">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="submit_bttn btn_i black_btn btn"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
     </section>
     <!-- tab section end -->
     <!-- Stallion with us start -->
     <section
-      class="with_us_main pdb100"
+      class="with_us_main pdb100 background-img"
       style="background-image: url('./assets/image/Rectangle\ 43.png')"
     >
       <div class="container">
@@ -1466,6 +1497,27 @@
       </div>
     </section>
     <!-- get in touch end -->
+    <!-- followed Stallion sidebar -->
+    <div class="follwed_sidebar_m">
+      <a href="#" class="button_follow">
+        <span class="icon_follow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z"
+            />
+          </svg>
+        </span>
+        <span class="text">Follow Stallion</span>
+      </a>
+    </div>
+
+    <!-- start -->
     <!-- footer start -->
     <footer id="main_footer">
       <div class="main_footer_upper">

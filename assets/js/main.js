@@ -173,3 +173,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // end
+// for Perview Gallery start
+function openPreview(element) {
+  const previewContent = document.getElementById("previewContent");
+
+  previewContent.innerHTML = "";
+
+  const clone = element.cloneNode(true);
+  clone.removeAttribute("onclick");
+  clone.controls = true; // Enable controls for video if applicable
+  previewContent.appendChild(clone);
+}
+// end
+// for popup
+$(document).ready(function () {
+  $(".Interested_popup").click(function () {
+    $(".call_owner_pop").css("display", "flex");
+  });
+
+  $(".close-btn").click(function () {
+    $(".call_owner_pop").css("display", "none");
+  });
+});
+// end
+$(document).ready(function () {
+  $(".button_follow").on("click", function (e) {
+    e.preventDefault();
+
+    $(this).find(".icon_follow svg").toggleClass("filled");
+
+    const textElement = $(this).find(".text");
+    if (textElement.text() === "Follow Stallion") {
+      textElement.text("Followed Stallion");
+    } else {
+      textElement.text("Follow Stallion");
+    }
+  });
+});
